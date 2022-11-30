@@ -1,0 +1,40 @@
+{
+  "name": "Telegram Torrent Leecher",
+  "description": "A Telegram Torrent (and youtube-dl) Leecher based on Pyrogram. Powered by @MaxxBots",
+  "logo": "https://telegra.ph/file/101a7d52e02772152c6e3.jpg",
+  "keywords": [
+    "telegram"
+  ],
+  "repository": "https://github.com/MaxxRider/Leech-Pro",
+  "success_url": "https://t.me/MaxxBotChat",
+  "website": "https://github.com/MaxxRider/Leech-Pro",
+  "env": {
+      "DB_URI": {
+          "description": "Copy-Paste the app name that you just typed above."
+      },
+      "BOT_TOKEN": {
+          "description": "Read the readme for more info about this var",
+          "required": false
+      },
+      "API_HASH": {
+          "description": "Read the readme for more info about this var",
+          "required": false
+      },
+      "APP_ID": {
+          "description": "Any Session Name for Bot",
+          "required": false
+      }
+  },
+  "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
