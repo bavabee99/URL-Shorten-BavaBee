@@ -22,3 +22,6 @@ python-arq
 ffmpeg-python
 requests
 ytthumb
+flask
+gunicorn
+
